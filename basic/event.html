@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Registration Form</title>
+
 </head>
 
 <body>
     <h2>Event Registration Form</h2>
-    <form action="#" method="POST">
+    <form action="#" method="POST" enctype="multipart/form-data">
 
         <fieldset>
             <legend>Personal Information</legend>
@@ -38,11 +39,30 @@
             <label for="event-date">Event Date:</label>
             <input type="date" id="event-date" name="event-date" required><br><br>
 
-            <label for="attending">Will you be attending?</label>
+            <label for="attending">Will you be attending?</label><br>
             <input type="radio" id="yes" name="attending" value="yes" required>
             <label for="yes">Yes</label>
             <input type="radio" id="no" name="attending" value="no">
             <label for="no">No</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Day Scholar or Hosteller?</legend>
+            <label for="residency-type">Select your Residency Status:</label>
+            <select id="residency-type" name="residency-type" required>
+                <option value="day-scholar">Day Scholar</option>
+                <option value="hosteller">Hosteller</option>
+            </select><br><br>
+
+            <!-- Hosteller Specific Section -->
+            <label for="hostel-room-number">Hostel Room Number (if applicable):</label>
+            <input type="text" id="hostel-room-number" name="hostel-room-number"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pass Collection</legend>
+            <label for="pass-file">Upload your pass document (if applicable):</label>
+            <input type="file" id="pass-file" name="pass-file" accept=".jpg,.jpeg,.png,.pdf"><br><br>
         </fieldset>
 
         <fieldset>
