@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS-Inspired Homepage</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #0f172a;
+        }
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+        
+        .navbar a:hover {
+            color: #3b82f6;
+        }
+        
+        .navbar .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 100px 10%;
+            background: radial-gradient(circle at bottom, #0f172a, #1e293b);
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #94a3b8;
+        }
+        
+        .hero .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .hero button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .hero .btn-primary {
+            background: #3b82f6;
+            color: white;
+        }
+        
+        .hero .btn-primary:hover {
+            background: #2563eb;
+        }
+        
+        .hero .btn-secondary {
+            background: #1e293b;
+            color: #94a3b8;
+        }
+        
+        .hero .btn-secondary:hover {
+            background: #334155;
+        }
+        
+        footer {
+            background: #1e293b;
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px 10%;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind Logo">
+            <a href="#">TailwindCSS</a>
+        </div>
+        <nav>
+            <a href="#">Docs</a>
+            <a href="#">Components</a>
+            <a href="#">Blog</a>
+            <a href="#">Showcase</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Rapidly build modern websites<br>without ever leaving your HTML.</h1>
+        <p>A utility-first CSS framework packed with classes like <span style="color: #3b82f6;">flex</span>, <span style="color: #3b82f6;">pt-4</span>, <span style="color: #3b82f6;">text-center</span>, and <span style="color: #3b82f6;">rotate-90</span> to
+            build any design.</p>
+        <div class="buttons">
+            <button class="btn-primary">Get started</button>
+            <button class="btn-secondary">Quick search</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TailwindCSS-Inspired. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
