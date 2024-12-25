@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Box Container with Border</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin-top: 100px;
+            border: 5px solid rgb(249, 249, 249);
+            border-radius: 10px;
+        }
+        
+        body {
+            background-color: rgb(4, 2, 2);
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            border: 3px solid rgb(0, 255, 174);
+            box-shadow: 0 0 10px 10px rgba(17, 236, 236, 0.6);
+            border-radius: 30px;
+        }
+        
+        .box1 {
+            background-color: red;
+        }
+        
+        .box2 {
+            background-color: blue;
+        }
+        
+        .box3 {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+
+</html>
